@@ -1,0 +1,9 @@
+<template name="ApplicationLayout">
+			{{#if currentUser}}
+				<article>
+					{{>yield}}
+				</article>
+			{{else}}
+					<p style="text-align:center;">You must login to see the content </p>
+				{{/if}}
+</template>

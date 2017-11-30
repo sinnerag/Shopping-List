@@ -1,0 +1,11 @@
+<template name="delete_new_list">
+	<table>
+		<tr><th>Shopping List name</th><th>Date of Creation</th><th>Shopping Date</th></tr>
+		{{#each list_items}}
+    <tr>
+			<td>{{nameofthelist}}</td><td>{{dateofcreation}}</td><td>{{dateofshopping}} -- <button value="{{_id}}" id="delete">Delete</button></td>
+		</tr>
+		{{/each}}
+	</table>
+	<p style="text-align:center;"><a href="/">Go Back</a></p>
+</template>

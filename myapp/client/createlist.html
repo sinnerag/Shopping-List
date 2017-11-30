@@ -1,0 +1,26 @@
+  <template name="create_list">
+    <div class="container" align="center">
+
+    	<form action="#saveitem" type="text">
+          <ul>
+              	  <li><label for="storename">Store Name</label>
+                    <!--input type="text" name="storename" id="storename"-->
+                    <select name="storename" id="storename" style="display:block;">
+                      <option value="">Select Store</option>
+                      <option value="Pingo Doce">Pingo Doce</option>
+                      <option value="Intermarche">Intermarche</option>
+                      <option value="Continent">Continent</option>
+                      <option value="Super Marcado">Super Marcado</option>
+                      <option value="Mini Presco">Mini Presco</option>
+                    </select>
+                  </li><br>
+              	  <li><label for="productname">Product Name</label> <input type="text" name="productname" id="productname"></li><br><br>
+                  <li><label for="quantity">Quantity</label> <input type="number" name="quantity" id="quantity"></li><br><br>
+                  <li><label for="price">Price<span class="glyphicon glyphicon-euro"></span></label> <input type="number" name="price" id="price"></li><br><br>
+              	  <li><input type="submit" id="newlistbutton" class="btn-floating btn-large waves-effect waves-light blue" href="/view_created_list" value="add"></li>
+                  <p style="text-align:center;"><a class="btn-floating btn-large waves-effect waves-light red" href="/view_new_list" onclick="alert('Are you sure you want to go back?')">GO BACK</a></p>
+          </ul>
+    	</form>
+
+    </div>
+</template>

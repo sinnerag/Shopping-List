@@ -1,0 +1,15 @@
+<template name="view_shop_list">
+
+<div class="container" align="center">
+	<input type="hidden" id="_id" value="{{_id}}">
+	<table>
+		<tr><th>Store Name</th><th>Product Name</th><th>Quantity</th>Price</tr>
+		{{#each list_items}}
+		<tr>
+			<td>{{storename}}</td><td>{{productname}}</td><td>{{quantity}}</td><td>{{price}}</td>--<td><button value="{{_id}}" id="delete1">Delete</button></td>
+		</tr>
+		{{/each}}
+	</table>
+	<p style="text-align:center;"><a class="btn-floating btn-large waves-effect waves-light blue" href="/view_new_list"><strong>Go Back</strong></a></p>
+	</div>
+</template>

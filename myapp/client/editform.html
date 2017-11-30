@@ -1,0 +1,9 @@
+<template name="editform">
+  <form>
+	<input type="hidden" value="{{_id}}" placeholder="ID" id="trueitemid">
+	<label for="itemid">ID:</label><input type="text" value="{{id}}" placeholder="ID" id="itemid"><br>
+	<label for="itemname">Name:</label><input type="text" value="{{name}}" placeholder="Name" id="itemname"><br>
+	<input type="submit" value="Edit">
+	</form>
+	<a href="/" alt="Add New">Go Back</a>
+</template>

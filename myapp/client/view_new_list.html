@@ -1,0 +1,18 @@
+<template name="view_new_list">
+
+<div class="container" align="center">
+	<table style="width:100%">
+		<tr><th><b>Shopping List name</b></th><th>Date of Creation</th><th>Shopping Date</th></tr>
+		{{#each list_items}}
+		<tr>
+			<td><b>{{nameofthelist}}</b></td><td><b>{{dateofcreation}}</b></td><td><b>{{dateofshopping}}</b></td>--
+			<td><button type="button" class="btn btn-info btn-lg" value="{{_id}}" id="delete"><span class="glyphicon glyphicon"></span>DELETE</button></td>--
+			<td><a href="/create_list/{{_id}}" class="btn btn-info btn-lg" value="{{_id}}" id="create"><span class="glyphicon glyphicon"></span>CREATE</a></td>--
+			<td><a href="/view_shop_list/{{_id}}" class="btn btn-info btn-lg"><span class="glyphicon glyphicon"></span>VIEW</a></td>
+     	<td><a href="/edit_created_list/{{_id}}" class="btn btn-info btn-lg"><span class="glyphicon glyphicon"></span>EDIT</a></td>
+		</tr>
+		{{/each}}
+	</table>
+	<p style="text-align:center;"><a class="btn-floating btn-large waves-effect waves-light red" href="/"><strong>Go Back</strong></a></p>
+</div>
+</template>

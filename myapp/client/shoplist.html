@@ -1,0 +1,15 @@
+<template name="shop_list">
+
+<div class="container" align="center">
+	<table style="width:100%">
+		<tr><th><b>Shopping List name</b></th><th>Date of Creation</th><th>Shopping Date</th></tr>
+		{{#each list_items}}
+		<tr>
+			<td><b>{{nameofthelist}}</b></td><td><b>{{dateofcreation}}</b></td><td><b>{{dateofshopping}}</b></td>--
+			<td><a href="/view_created_list/{{_id}}" class="btn btn-info btn-lg"><span class="glyphicon glyphicon"></span>VIEW</a></td>
+		</tr>
+		{{/each}}
+	</table>
+	<p style="text-align:center;"><a class="btn-floating btn-large waves-effect waves-light red" href="/"><strong>Go Back</strong></a></p>
+</div>
+</template>

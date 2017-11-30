@@ -1,0 +1,49 @@
+
+<head>
+
+          <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+</head>
+<body>
+      <nav>
+        <div class="nav-wrapper" >
+          <a href="#" class="brand-logo">Shopping List Application</a>
+        </div>
+
+            </nav>
+                      <div class="container" align="center">
+                         <nav class="navbar navbar-default">
+                           <div class="container-fluid" >
+                               <ul class="nav navbar-nav">
+                                 <li class="active"><a href="/add_new_list"><strong>ADD</strong></a></li>
+                                 <li class="active"><a href="/view_new_list"><strong>VIEW</strong></a></li>
+                                 <li class="active"><a href="/about_developer"><strong>ABOUT</strong></a></li>
+                                 <li class="active"><a href="/shop_list"><strong>SHOP</strong></a></li>
+                              </ul>
+                            </div>
+              </nav>
+              <button type="button" id="login_button" class="btn btn-default btn-sm">
+                  <span class="glyphicon glyphicon-user"></span>
+                  {{>loginButtons}}
+              </button>
+              <h1> This is a shopping website</h1>
+              <p> This is the test page which helps you understand how to build a
+                webpage for shopping and many more. Also this page lets navigate through the pages.</p>
+          </div>
+
+
+
+ <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+          <script>
+          $(document).ready(function(){
+          		$('.slider').slider({full_width: true});
+          			});
+    </script>
+
+</body>

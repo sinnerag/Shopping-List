@@ -1,0 +1,15 @@
+			<template name="add_new_list">
+							<div class="container" align="center">
+								<table>
+									<form action="#saveitem">
+								      <ul>
+								          <li><label for="nameofthelist">Name of the List:</label> <input type="text" name="nameofthelist" id="nameofthelist"></li><br>
+								      	  <li><label for="dateofcreation">Date of Creation:</label> <input type="text" value="{{date}}" name="dateofcreation" id="dateofcreation" disabled></li><br><br>
+								      	  <li><label for="datepicker">Date of Shopping:</label> <input type="text" name="datepicker" id="datepicker"></li><br><br>
+								      	  <li><input class="btn-floating btn-large waves-effect waves-light blue" type="submit" id="newlistbutton" value="add"></li>
+													<a class="btn-floating btn-large waves-effect waves-light red" href="/" onclick="alert('Are you sure you want to go back?')">GO BACK</a>
+								      </ul>
+									</form>
+								</table>
+						</div>
+			</template>
